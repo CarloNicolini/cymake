@@ -7,6 +7,14 @@ This simple project needs to be built with CMake > 2.6 and the latest version of
 
 It explains how to do some interesting wrapping of C++ class hierarchies with Cython and how to get a Python module from them without too much pain.
 
+Source Download & Compilation
+===== 
+First, acquire the source code by cloning the git repository:
+
+    git clone https://github.com/CarloNicolini/cymake.git
+
+then follow the instructions here.
+
 Build on Linux
 ====
 In order to build this project in a Ubuntu/Linux box you have to install:
