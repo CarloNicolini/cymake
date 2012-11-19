@@ -23,6 +23,8 @@ then issue the command
 
 `cmake .`
 
+(I suggest to make a Debug build of it, by explicitly specifying `cmake -DCMAKE_BUILD_TYPE=Debug .` )
+
 The module `test1.so` will be build inside `cymake/build` folder.
 
 You can test it copying the python demo `examples/test1.py` inside the `cymake/build` folder and then:
