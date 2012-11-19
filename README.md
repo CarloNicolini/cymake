@@ -1,11 +1,23 @@
 cymake
 ======
 
-A base example to bring your c++ class hierarchy in cython and create a python module
+Cython is hybrid C-Python language to easily write Python C-extensions. Cython allows one to write fast Python-ish code and easily integrate C or C++ code.
+
+This repository has CMake utilities for building Cython projects with CMake and is an improvement of simplification of the already existent *cython-cmake-example` https://github.com/thewtex/cython-cmake-example with a hierarchy of C++ classes and usage of C++ STL containers and iterators, which is not very clear from the Cython doc.
+
+The features of this build system include:
+
+    Easy configuration of build settings.
+    Easy integration of external libraries.
+    Implicit Makefile dependency generation for .pxd files.
+    Implicit Makefile dependency generation for C/C++ headers.
+    Out-of-source builds.
 
 This simple project needs to be built with CMake > 2.6 and the latest version of cython (currently 0.17.1).
 
 It explains how to do some interesting wrapping of C++ class hierarchies with Cython and how to get a Python module from them without too much pain.
+
+Again thanks to the Matthew McCormick and his cython-cmake-example  https://github.com/thewtex
 
 Source Download & Compilation
 ===== 
