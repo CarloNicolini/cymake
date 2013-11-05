@@ -15,13 +15,12 @@
 #include "Foo.h"
 
 typedef std::vector<Foo*> FooRand;
-
 typedef Foo* FooPtr;
 typedef Bar* BarPtr;
 
-
 using namespace std;
 #define TOTAL_N 3
+
 class Qux
 {
 public:
@@ -46,9 +45,9 @@ public:
                 mm[i][k]=rand()%10;
             myFooPtrVec[i] = new Foo();
 
-            //myVectorOfPairs[i]=std::pair<Foo*,Bar*>(1, new Bar());
         }
     };
+    
     ~Qux()
     {
         std::cerr << ":::: Qux  destructor ::::" << std::endl;
@@ -61,8 +60,6 @@ public:
         {
             delete[] mm[i];
             delete myFooPtrVec[i];
-            //delete myVectorOfPairs[i].first;
-            //delete myVectorOfPairs[i].second;
         }
     }
 
@@ -71,7 +68,5 @@ public:
     std::vector<int*> mm;
     FooRand myFooPtrVec;
     std::pair<FooPtr,BarPtr> myPair2;
-    
-    //std::vector< std::pair< Foo*, Bar* > > myVectorOfPairs;
 
 };
